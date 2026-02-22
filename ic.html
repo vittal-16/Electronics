@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>LogicLab – Digital Logic Learning Platform</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+/* ========== GLOBAL ========== */
+body{
+  margin:0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background:#f5f7fc;
+  color:#222;
+  line-height:1.6;
+}
+h1,h2,h3{color:#2b4eff}
+section{padding:60px 20px}
+.container{max-width:1200px;margin:auto}
+
+/* ========== NAVBAR ========== */
+nav{
+  position:sticky;
+  top:0;
+  z-index:1000;
+  background:#ffffff;
+  box-shadow:0 4px 15px rgba(0,0,0,0.1);
+}
+nav .container{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+nav ul{
+  list-style:none;
+  display:flex;
+  gap:20px;
+  padding:0;
+}
+nav a{
+  text-decoration:none;
+  font-weight:600;
+  color:#2b4eff;
+}
+nav a:hover{color:#1f39c9}
+
+/* ========== HERO (HOME) ========== */
+.hero{
+  background:linear-gradient(135deg,#e8ecff,#f9fbff);
+  text-align:center;
+  padding:80px 20px;
+}
+.hero p{max-width:700px;margin:auto}
+
+/* ========== CARDS ========== */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+}
+.card{
+  background:#fff;
+  border-radius:16px;
+  padding:20px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.12);
+}
+
+/* ========== BUTTONS ========== */
+.btn{
+  display:inline-block;
+  margin:10px;
+  padding:10px 18px;
+  background:#2b4eff;
+  color:#fff;
+  border-radius:10px;
+  text-decoration:none;
+  font-weight:600;
+}
+.btn:hover{background:#1f39c9}
+
+/* ========== TOOLS ========== */
+input,select{
+  padding:8px;
+  border-radius:8px;
+  border:1px solid #ccc;
+}
+.tool-box{
+  background:#eef2ff;
+  padding:15px;
+  border-radius:12px;
+}
+footer{
+  background:#ffffff;
+  text-align:center;
+  padding:20px;
+  box-shadow:0 -4px 15px rgba(0,0,0,0.1);
+}
+</style>
+</head>
+
+<body>
+
+<!-- ========== NAVIGATION ========== -->
+<nav>
+  <div class="container">
+    <h2>⚡ LogicLab</h2>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#fundamentals">Fundamentals</a></li>
+      <li><a href="#combinational">Combinational</a></li>
+      <li><a href="#sequential">Sequential</a></li>
+      <li><a href="#hdl">HDL</a></li>
+      <li><a href="#practice">Practice</a></li>
+      <li><a href="#tools">Tools</a></li>
+      <li><a href="#resources">Resources</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ========== A. HOME ========== -->
+<section id="home" class="hero">
+  <div class="container">
+    <h1>Digital Logic – Learn, Practice, Simulate</h1>
+    <p>
+      LogicLab is a complete platform to learn Digital Logic Design from fundamentals
+      to hardware-level understanding and HDL-based simulation.
+    </p>
+
+    <p><b>Who this is for:</b> Engineering students, beginners, lab & viva preparation</p>
+
+    <a class="btn" href="#fundamentals">Learn</a>
+    <a class="btn" href="#practice">Practice</a>
+    <a class="btn" href="#tools">Simulate</a>
+  </div>
+</section>
+
+<!-- ========== B. FUNDAMENTALS ========== -->
+<section id="fundamentals">
+  <div class="container">
+    <h2>Logic Design Fundamentals</h2>
+    <div class="grid">
+      <div class="card">Number Systems</div>
+      <div class="card">Boolean Algebra</div>
+      <div class="card">Logic Gates</div>
+      <div class="card">Truth Tables</div>
+      <div class="card">Karnaugh Maps</div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== C. COMBINATIONAL ========== -->
+<section id="combinational">
+  <div class="container">
+    <h2>Combinational Circuits</h2>
+    <div class="grid">
+      <div class="card">Adders & Subtractors</div>
+      <div class="card">Multiplexers / Demultiplexers</div>
+      <div class="card">Encoders / Decoders</div>
+      <div class="card">Comparators</div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== D. SEQUENTIAL ========== -->
+<section id="sequential">
+  <div class="container">
+    <h2>Sequential Circuits</h2>
+    <div class="grid">
+      <div class="card">Latches</div>
+      <div class="card">Flip-Flops</div>
+      <div class="card">Registers</div>
+      <div class="card">Counters</div>
+      <div class="card">Timing Concepts</div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== E. HDL ========== -->
+<section id="hdl">
+  <div class="container">
+    <h2>Hardware Description (Verilog / HDL)</h2>
+    <div class="grid">
+      <div class="card">HDL Concepts</div>
+      <div class="card">Behavioral vs Structural</div>
+      <div class="card">Testbenches</div>
+      <div class="card">Simulation Flow</div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== F. PRACTICE ========== -->
+<section id="practice">
+  <div class="container">
+    <h2>Practice & Problems</h2>
+    <div class="grid">
+      <div class="card">Solved Examples</div>
+      <div class="card">Unsolved Problems</div>
+      <div class="card">Step-by-Step Logic Flow</div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== G + H. TOOLS ========== -->
+<section id="tools">
+  <div class="container">
+    <h2>Visualization & Tools</h2>
+
+    <div class="grid">
+      <div class="tool-box">
+        <h3>Truth Table Generator</h3>
+        <input placeholder="Enter Boolean Expression">
+      </div>
+
+      <div class="tool-box">
+        <h3>K-Map Solver</h3>
+        <p>Visual grouping (to be implemented)</p>
+      </div>
+
+      <div class="tool-box">
+        <h3>Boolean Simplifier</h3>
+        <p>Step-by-step reduction</p>
+      </div>
+
+      <div class="tool-box">
+        <h3>Flip-Flop Converter</h3>
+        <p>JK ↔ D ↔ T</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== I. RESOURCES ========== -->
+<section id="resources">
+  <div class="container">
+    <h2>Resources</h2>
+    <div class="grid">
+      <div class="card">Cheat Sheets</div>
+      <div class="card">Formula Sheets</div>
+      <div class="card">PDF Notes</div>
+      <div class="card">Viva Questions</div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© LogicLab – Educational Digital Logic Platform</p>
+</footer>
+
+</body>
+</html>
+
+
